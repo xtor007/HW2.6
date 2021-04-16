@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KJP-dw-BOf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Persons lists2-->
+        <scene sceneID="4Ij-Mi-uGi">
+            <objects>
+                <viewController id="NMR-nx-EeI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tSB-Wg-nbq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6jy-59-zdl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Persons lists2" image="2.circle" catalog="system" id="oOy-ug-4X1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fL-1H-LF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="613"/>
+        </scene>
+        <!--Person lists1-->
+        <scene sceneID="qgJ-eV-sYe">
+            <objects>
+                <viewController title="Person lists1" id="PhC-EU-4hi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sLl-c7-mOz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2ge-jc-ajj">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ash-2z-EbZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2ge-jc-ajj" firstAttribute="top" secondItem="Ash-2z-EbZ" secondAttribute="top" id="IIL-kV-YUp"/>
+                            <constraint firstItem="2ge-jc-ajj" firstAttribute="trailing" secondItem="Ash-2z-EbZ" secondAttribute="trailing" id="PPu-Py-Dbt"/>
+                            <constraint firstItem="2ge-jc-ajj" firstAttribute="leading" secondItem="Ash-2z-EbZ" secondAttribute="leading" id="djW-cU-c9u"/>
+                            <constraint firstItem="2ge-jc-ajj" firstAttribute="bottom" secondItem="Ash-2z-EbZ" secondAttribute="bottom" id="lQl-nU-In7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Persons list1" image="1.circle" catalog="system" landscapeImage="01.circle" id="Ced-07-vbn"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lyW-pp-8Ss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-599.20000000000005" y="-318.89055472263868"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GG4-dq-XbT">
+            <objects>
+                <tabBarController id="KJP-dw-BOf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AOC-gW-OM5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PhC-EU-4hi" kind="relationship" relationship="viewControllers" id="Xyz-pr-SmX"/>
+                        <segue destination="NMR-nx-EeI" kind="relationship" relationship="viewControllers" id="fsg-Q8-2NI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcL-9s-uSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1516" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01.circle" catalog="system" width="128" height="121"/>
+        <image name="1.circle" catalog="system" width="128" height="121"/>
+        <image name="2.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

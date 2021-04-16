@@ -13,6 +13,8 @@
 		FF5241D9262A026E0040D698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5241D7262A026E0040D698 /* Main.storyboard */; };
 		FF5241DB262A02830040D698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5241DA262A02830040D698 /* Assets.xcassets */; };
 		FF5241DE262A02830040D698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5241DC262A02830040D698 /* LaunchScreen.storyboard */; };
+		FF5241EF262A088E0040D698 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5241EE262A088E0040D698 /* Datas.swift */; };
+		FF5241F2262A13B40040D698 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5241F1262A13B40040D698 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FF5241DA262A02830040D698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5241DD262A02830040D698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF5241DF262A02830040D698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5241EE262A088E0040D698 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
+		FF5241F1262A13B40040D698 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		FF5241D0262A026E0040D698 /* HW2.6 */ = {
 			isa = PBXGroup;
 			children = (
-				FF5241D1262A026E0040D698 /* AppDelegate.swift */,
-				FF5241D3262A026E0040D698 /* SceneDelegate.swift */,
-				FF5241D5262A026E0040D698 /* ViewController.swift */,
-				FF5241D7262A026E0040D698 /* Main.storyboard */,
-				FF5241DA262A02830040D698 /* Assets.xcassets */,
-				FF5241DC262A02830040D698 /* LaunchScreen.storyboard */,
-				FF5241DF262A02830040D698 /* Info.plist */,
+				FF5241EC262A03A10040D698 /* Resourses */,
+				FF5241E9262A03710040D698 /* View */,
+				FF5241E8262A03470040D698 /* Control */,
+				FF5241E7262A02EC0040D698 /* Supported files */,
+				FF5241E6262A02E10040D698 /* Module */,
 			);
 			path = HW2.6;
+			sourceTree = "<group>";
+		};
+		FF5241E6262A02E10040D698 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				FF5241EE262A088E0040D698 /* Datas.swift */,
+				FF5241F1262A13B40040D698 /* Person.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		FF5241E7262A02EC0040D698 /* Supported files */ = {
+			isa = PBXGroup;
+			children = (
+				FF5241D1262A026E0040D698 /* AppDelegate.swift */,
+				FF5241DF262A02830040D698 /* Info.plist */,
+			);
+			path = "Supported files";
+			sourceTree = "<group>";
+		};
+		FF5241E8262A03470040D698 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				FF5241D5262A026E0040D698 /* ViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		FF5241E9262A03710040D698 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF5241D3262A026E0040D698 /* SceneDelegate.swift */,
+				FF5241D7262A026E0040D698 /* Main.storyboard */,
+				FF5241DC262A02830040D698 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF5241EC262A03A10040D698 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				FF5241DA262A02830040D698 /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5241F2262A13B40040D698 /* Person.swift in Sources */,
 				FF5241D6262A026E0040D698 /* ViewController.swift in Sources */,
 				FF5241D2262A026E0040D698 /* AppDelegate.swift in Sources */,
 				FF5241D4262A026E0040D698 /* SceneDelegate.swift in Sources */,
+				FF5241EF262A088E0040D698 /* Datas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AF68Y4A9MG;
-				INFOPLIST_FILE = HW2.6/Info.plist;
+				INFOPLIST_FILE = "HW2.6/Supported files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AF68Y4A9MG;
-				INFOPLIST_FILE = HW2.6/Info.plist;
+				INFOPLIST_FILE = "HW2.6/Supported files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
