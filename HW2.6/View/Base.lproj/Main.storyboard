@@ -27,7 +27,7 @@
         <!--Person lists1-->
         <scene sceneID="qgJ-eV-sYe">
             <objects>
-                <viewController title="Person lists1" id="PhC-EU-4hi" sceneMemberID="viewController">
+                <viewController title="Person lists1" id="PhC-EU-4hi" customClass="PersonList1VC" customModule="HW2_6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sLl-c7-mOz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Persons list1" image="1.circle" catalog="system" landscapeImage="01.circle" id="Ced-07-vbn"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="table" destination="2ge-jc-ajj" id="xB9-Kd-paq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyW-pp-8Ss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

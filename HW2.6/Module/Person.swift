@@ -9,10 +9,10 @@ import Foundation
 
 class Person {
     
-    private var name = ""
-    private var surname = ""
-    private var phone = ""
-    private var email = ""
+    var name = ""
+    var surname = ""
+    var phone = ""
+    var email = ""
     
     private func downLetter (st: String) -> String {
         return st.lowercased()
