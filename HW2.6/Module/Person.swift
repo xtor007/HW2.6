@@ -31,3 +31,5 @@ class Person {
         email = "\(downLetter(st: name)).\(downLetter(st: surname))@\(domen)"
     }
 }
+
+

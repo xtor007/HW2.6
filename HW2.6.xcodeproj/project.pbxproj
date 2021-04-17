@@ -16,6 +16,7 @@
 		FF5241EF262A088E0040D698 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5241EE262A088E0040D698 /* Datas.swift */; };
 		FF5241F2262A13B40040D698 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5241F1262A13B40040D698 /* Person.swift */; };
 		FF5241F5262A1CD80040D698 /* PersonList1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5241F4262A1CD80040D698 /* PersonList1VC.swift */; };
+		FF5241F8262AD01F0040D698 /* InfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5241F7262AD01F0040D698 /* InfVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FF5241EE262A088E0040D698 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
 		FF5241F1262A13B40040D698 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FF5241F4262A1CD80040D698 /* PersonList1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList1VC.swift; sourceTree = "<group>"; };
+		FF5241F7262AD01F0040D698 /* InfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				FF5241D5262A026E0040D698 /* ViewController.swift */,
 				FF5241F4262A1CD80040D698 /* PersonList1VC.swift */,
+				FF5241F7262AD01F0040D698 /* InfVC.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				FF5241F2262A13B40040D698 /* Person.swift in Sources */,
 				FF5241D6262A026E0040D698 /* ViewController.swift in Sources */,
 				FF5241D2262A026E0040D698 /* AppDelegate.swift in Sources */,
+				FF5241F8262AD01F0040D698 /* InfVC.swift in Sources */,
 				FF5241F5262A1CD80040D698 /* PersonList1VC.swift in Sources */,
 				FF5241D4262A026E0040D698 /* SceneDelegate.swift in Sources */,
 				FF5241EF262A088E0040D698 /* Datas.swift in Sources */,
