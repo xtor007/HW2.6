@@ -51,7 +51,7 @@ extension PersonList1VC:UITableViewDataSource, UITableViewDelegate {
         nowName = "\(data.datas[indexPath.row].name) \(data.datas[indexPath.row].surname)"
         nowEmail = "Email: \(data.datas[indexPath.row].email)"
         nowPhone = "Phone number: \(data.datas[indexPath.row].phone)"
-        self.performSegue(withIdentifier: "toInfo", sender: 1)
+        self.performSegue(withIdentifier: "toInfo", sender: UIStoryboardSegue.self)
     }
     
 }

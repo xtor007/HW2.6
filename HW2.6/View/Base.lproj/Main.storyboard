@@ -11,18 +11,33 @@
         <!--Persons lists2-->
         <scene sceneID="4Ij-Mi-uGi">
             <objects>
-                <viewController id="NMR-nx-EeI" sceneMemberID="viewController">
+                <viewController id="NMR-nx-EeI" customClass="PersonList2VC" customModule="HW2_6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tSB-Wg-nbq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KSm-Bx-Ruk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6jy-59-zdl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KSm-Bx-Ruk" firstAttribute="top" secondItem="6jy-59-zdl" secondAttribute="top" id="LFf-lM-qXJ"/>
+                            <constraint firstItem="KSm-Bx-Ruk" firstAttribute="leading" secondItem="6jy-59-zdl" secondAttribute="leading" id="YHx-TH-D9b"/>
+                            <constraint firstItem="KSm-Bx-Ruk" firstAttribute="bottom" secondItem="6jy-59-zdl" secondAttribute="bottom" id="pUZ-UD-b5M"/>
+                            <constraint firstItem="KSm-Bx-Ruk" firstAttribute="trailing" secondItem="6jy-59-zdl" secondAttribute="trailing" id="uIk-lf-vx7"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Persons lists2" image="2.circle" catalog="system" id="oOy-ug-4X1"/>
+                    <connections>
+                        <outlet property="table" destination="KSm-Bx-Ruk" id="oEY-pk-62I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fL-1H-LF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-622" y="613"/>
+            <point key="canvasLocation" x="-623.20000000000005" y="612.14392803598207"/>
         </scene>
         <!--Person lists1-->
         <scene sceneID="qgJ-eV-sYe">
@@ -109,7 +124,7 @@
                             <constraint firstItem="8FE-xf-wNn" firstAttribute="leading" secondItem="X88-Fs-V13" secondAttribute="leading" constant="57" id="zxw-Ik-pk1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0R4-IC-2NP"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="0R4-IC-2NP"/>
                     <connections>
                         <outlet property="email" destination="8FE-xf-wNn" id="ezf-TI-sh9"/>
                         <outlet property="name" destination="e27-sB-JMB" id="QHA-gG-pEY"/>
